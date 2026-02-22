@@ -1,123 +1,0 @@
-<!doctype html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>SweetLab | منيو حلويات</title>
-  <meta name="description" content="منيو حلويات بالصور + سلة مشتريات + طلب واتساب" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header class="topbar">
-    <div class="brand" role="banner">
-      <div class="logo" aria-hidden="true">SL</div>
-      <div class="brandText">
-        <div class="name">SweetLab</div>
-        <div class="tag">منيو حلويات • صور • سلة مشتريات</div>
-      </div>
-    </div>
-
-    <button class="cartBtn" id="openCartBtn" aria-label="فتح السلة">
-      <span class="cartIcon" aria-hidden="true">🛒</span>
-      <span class="cartText">السلة</span>
-      <span class="badge" id="cartCount">0</span>
-    </button>
-  </header>
-
-  <main class="container">
-    <section class="hero">
-      <div class="heroCard">
-        <h1>منيو حلويات احترافي</h1>
-        <p>اختار اللي بتحبه، أضف للسلة، وبضغطة زر ابعت الطلب على واتساب برسالة جاهزة.</p>
-        <div class="heroActions">
-          <a class="btnPrimary" href="#menu">ابدأ الطلب</a>
-          <a class="btnGhost" href="#info">معلومات المحل</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="controls" id="menu" aria-label="أدوات البحث والتصفية">
-      <div class="searchWrap">
-        <input id="searchInput" class="searchInput" type="search" placeholder="ابحث باسم الصنف… (مثال: كنافة)" autocomplete="off" />
-        <button id="clearSearch" class="clearBtn" title="مسح البحث" aria-label="مسح البحث">✕</button>
-      </div>
-
-      <div class="chips" id="categoryChips" aria-label="التصنيفات">
-        <!-- chips inserted here -->
-      </div>
-    </section>
-
-    <section class="grid" id="productsGrid" aria-label="قائمة المنتجات">
-      <!-- cards inserted here -->
-    </section>
-
-    <section class="footerCard" id="info">
-      <div class="footerCols">
-        <div>
-          <h2>SweetLab</h2>
-          <p>نسخة تجريبية — تقدر تغيّر الاسم، الألوان، المنتجات، والأسعار بسهولة من ملف <code>products.json</code>.</p>
-        </div>
-        <div>
-          <h3>ساعات العمل</h3>
-          <p>يوميًا: 10:00 ص — 12:00 م</p>
-        </div>
-        <div>
-          <h3>التواصل</h3>
-          <p>واتساب الطلبات: <span class="mono">+20XXXXXXXXXX</span></p>
-          <p class="muted">* غيّر الرقم داخل <code>app.js</code> (WHATSAPP_NUMBER).</p>
-        </div>
-      </div>
-      <div class="muted small">© <span id="year"></span> SweetLab — Menu Demo</div>
-    </section>
-  </main>
-
-  <!-- Cart Drawer -->
-  <aside class="drawer" id="drawer" aria-hidden="true">
-    <div class="drawerBackdrop" id="drawerBackdrop"></div>
-    <div class="drawerPanel" role="dialog" aria-modal="true" aria-label="سلة المشتريات">
-      <div class="drawerHeader">
-        <div class="drawerTitle">
-          <div class="drawerIcon" aria-hidden="true">🧁</div>
-          <div>
-            <div class="drawerH">سلة المشتريات</div>
-            <div class="drawerSub" id="cartSub">0 منتجات</div>
-          </div>
-        </div>
-        <button class="iconBtn" id="closeCartBtn" aria-label="إغلاق السلة">✕</button>
-      </div>
-
-      <div class="drawerBody">
-        <div id="cartItems" class="cartItems"></div>
-
-        <div class="summary">
-          <div class="row">
-            <span class="muted">الإجمالي</span>
-            <span class="price" id="cartTotal">0</span>
-          </div>
-
-          <div class="row">
-            <label class="muted" for="noteInput">ملاحظة للطلب (اختياري)</label>
-          </div>
-          <textarea id="noteInput" class="note" placeholder="مثال: بدون فستق، التسليم بعد 6 مساءً…"></textarea>
-
-          <div class="row">
-            <label class="muted" for="customerInput">الاسم (اختياري)</label>
-          </div>
-          <input id="customerInput" class="text" placeholder="اسم العميل" />
-
-          <div class="actions">
-            <button class="btnDanger" id="clearCartBtn">تفريغ السلة</button>
-            <button class="btnPrimary" id="checkoutBtn">اطلب عبر واتساب</button>
-          </div>
-
-          <div class="hint muted small">
-            سيتم فتح واتساب برسالة جاهزة تحتوي على الأصناف والكميات والإجمالي.
-          </div>
-        </div>
-      </div>
-    </div>
-  </aside>
-
-  <script src="app.js"></script>
-</body>
-</html>

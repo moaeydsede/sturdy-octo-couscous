@@ -1,0 +1,251 @@
+[
+  {
+    "id": "yamish_small",
+    "name": "علبة ياميش رمضان - صغيرة",
+    "category": "ياميش رمضان",
+    "desc": "تشكيلة مختارة من ياميش رمضان (تجريبي).",
+    "image": "https://images.unsplash.com/photo-1604909052743-94f6a8d7c9fe?auto=format&fit=crop&w=1600&q=70",
+    "tags": [
+      "popular"
+    ],
+    "variants": [
+      {
+        "sku": "yamish_small_1",
+        "label": "صندوق صغير",
+        "hint": "مناسب كهدية",
+        "price": 1650,
+        "currency": "ج.م"
+      },
+      {
+        "sku": "yamish_small_2",
+        "label": "صندوق صغير + تغليف",
+        "hint": "تغليف فاخر",
+        "price": 1800,
+        "currency": "ج.م"
+      }
+    ]
+  },
+  {
+    "id": "yamish_medium",
+    "name": "علبة ياميش رمضان - وسط",
+    "category": "ياميش رمضان",
+    "desc": "تشكيلة أكبر مع إضافات (تجريبي).",
+    "image": "https://images.unsplash.com/photo-1600628422019-8ff28b8c6f73?auto=format&fit=crop&w=1600&q=70",
+    "tags": [
+      "new",
+      "offer"
+    ],
+    "variants": [
+      {
+        "sku": "yamish_med_1",
+        "label": "صندوق وسط",
+        "hint": "اقتصادي",
+        "price": 2200,
+        "currency": "ج.م"
+      },
+      {
+        "sku": "yamish_med_2",
+        "label": "صندوق وسط + فستق",
+        "hint": "مميز",
+        "price": 2450,
+        "currency": "ج.م"
+      }
+    ]
+  },
+  {
+    "id": "yamish_large",
+    "name": "علبة ياميش رمضان - كبير",
+    "category": "ياميش رمضان",
+    "desc": "علبة كبيرة مناسبة للعائلة والضيافة (تجريبي).",
+    "image": "https://images.unsplash.com/photo-1615484477778-ca3b77940c25?auto=format&fit=crop&w=1600&q=70",
+    "tags": [
+      "popular"
+    ],
+    "variants": [
+      {
+        "sku": "yamish_l_1",
+        "label": "صندوق كبير",
+        "hint": "وفرة عالية",
+        "price": 2950,
+        "currency": "ج.م"
+      },
+      {
+        "sku": "yamish_l_2",
+        "label": "صندوق كبير + مكسرات",
+        "hint": "فاخر",
+        "price": 3300,
+        "currency": "ج.م"
+      }
+    ]
+  },
+  {
+    "id": "nuts_mix",
+    "name": "مكسرات مشكلة",
+    "category": "ياميش رمضان",
+    "desc": "مزيج لوز/كاجو/بندق (تجريبي).",
+    "image": "https://images.unsplash.com/photo-1599599810694-b38d84d937f7?auto=format&fit=crop&w=1600&q=70",
+    "tags": [
+      "offer"
+    ],
+    "variants": [
+      {
+        "sku": "nuts_250",
+        "label": "250 جم",
+        "hint": "كيس",
+        "price": 220,
+        "currency": "ج.م"
+      },
+      {
+        "sku": "nuts_500",
+        "label": "500 جم",
+        "hint": "كيس",
+        "price": 420,
+        "currency": "ج.م"
+      },
+      {
+        "sku": "nuts_1000",
+        "label": "1 كيلو",
+        "hint": "كيس",
+        "price": 780,
+        "currency": "ج.م"
+      },
+      {
+        "sku": "nuts_box",
+        "label": "علبة هدية",
+        "hint": "تغليف",
+        "price": 900,
+        "currency": "ج.م"
+      }
+    ]
+  },
+  {
+    "id": "dates",
+    "name": "بلح نصف جاف",
+    "category": "ياميش رمضان",
+    "desc": "بلح بجودة عالية (تجريبي).",
+    "image": "https://images.unsplash.com/photo-1587483166702-64d2c8933ba3?auto=format&fit=crop&w=1600&q=70",
+    "tags": [],
+    "variants": [
+      {
+        "sku": "dates_500",
+        "label": "500 جم",
+        "hint": "صندوق",
+        "price": 160,
+        "currency": "ج.م"
+      },
+      {
+        "sku": "dates_1000",
+        "label": "1 كيلو",
+        "hint": "صندوق",
+        "price": 290,
+        "currency": "ج.م"
+      }
+    ]
+  },
+  {
+    "id": "qamar",
+    "name": "قمر الدين",
+    "category": "ياميش رمضان",
+    "desc": "قمر الدين السوري الأصلي (تجريبي).",
+    "image": "https://images.unsplash.com/photo-1604909052743-94f6a8d7c9fe?auto=format&fit=crop&w=1600&q=70",
+    "tags": [
+      "new"
+    ],
+    "variants": [
+      {
+        "sku": "qamar_1",
+        "label": "لفة 400 جم",
+        "hint": "—",
+        "price": 135,
+        "currency": "ج.م"
+      },
+      {
+        "sku": "qamar_2",
+        "label": "2 لفة",
+        "hint": "وفر",
+        "price": 250,
+        "currency": "ج.م"
+      }
+    ]
+  },
+  {
+    "id": "knafeh",
+    "name": "كنافة نابلسية",
+    "category": "حلويات",
+    "desc": "جبنة + قشطة، محمّرة.",
+    "image": "https://images.unsplash.com/photo-1601979031925-424e53b6caaa?auto=format&fit=crop&w=1600&q=70",
+    "tags": [
+      "popular"
+    ],
+    "variants": [
+      {
+        "sku": "knafeh_s",
+        "label": "صغير",
+        "hint": "—",
+        "price": 120,
+        "currency": "ج.م"
+      },
+      {
+        "sku": "knafeh_m",
+        "label": "وسط",
+        "hint": "—",
+        "price": 200,
+        "currency": "ج.م"
+      },
+      {
+        "sku": "knafeh_l",
+        "label": "كبير",
+        "hint": "—",
+        "price": 320,
+        "currency": "ج.م"
+      },
+      {
+        "sku": "knafeh_tray",
+        "label": "صينية",
+        "hint": "—",
+        "price": 450,
+        "currency": "ج.م"
+      }
+    ]
+  },
+  {
+    "id": "baklava",
+    "name": "بقلاوة بالفستق",
+    "category": "حلويات",
+    "desc": "بقلاوة مقرمشة بفستق حلبي.",
+    "image": "https://images.unsplash.com/photo-1542826438-bd32f43d626f?auto=format&fit=crop&w=1600&q=70",
+    "tags": [
+      "offer"
+    ],
+    "variants": [
+      {
+        "sku": "bak_250",
+        "label": "250 جم",
+        "hint": "—",
+        "price": 110,
+        "currency": "ج.م"
+      },
+      {
+        "sku": "bak_500",
+        "label": "500 جم",
+        "hint": "—",
+        "price": 210,
+        "currency": "ج.م"
+      },
+      {
+        "sku": "bak_1000",
+        "label": "1 كيلو",
+        "hint": "—",
+        "price": 390,
+        "currency": "ج.م"
+      },
+      {
+        "sku": "bak_box",
+        "label": "علبة هدية",
+        "hint": "—",
+        "price": 450,
+        "currency": "ج.م"
+      }
+    ]
+  }
+]

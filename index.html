@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>SweetLab | تصنيف: ياميش رمضان</title>
+  <meta name="description" content="منيو حلويات احترافي على شكل متجر: تصنيفات جانبية + شبكة منتجات + سلة." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="topStrip">
+    <div class="wrap topStripInner">
+      <div class="phone">☎ <span class="mono" id="shopPhone">01234567890</span></div>
+      <div class="miniLinks">
+        <a href="#about">عن المحل</a>
+        <a href="#policy">سياسة الاسترجاع</a>
+        <a href="#contact">اتصل بنا</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="wrap headerInner">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">SL</div>
+        <div class="brandText">
+          <div class="brandName">SweetLab</div>
+          <div class="brandTag">حلويات • ياميش • ضيافة</div>
+        </div>
+      </div>
+
+      <div class="headerActions">
+        <button class="ghostBtn" id="openFilters" aria-label="فتح التصنيفات (موبايل)">
+          <span class="icon" aria-hidden="true">☰</span> التصنيفات
+        </button>
+
+        <div class="search">
+          <input id="searchInput" placeholder="ابحث في المنتجات…" type="search" autocomplete="off"/>
+          <button id="clearSearch" aria-label="مسح البحث">✕</button>
+        </div>
+
+        <button class="cartBtn" id="openCart" aria-label="فتح السلة">
+          <span class="icon" aria-hidden="true">🛒</span>
+          <span>السلة</span>
+          <span class="badge" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="pageHead">
+    <div class="wrap">
+      <div class="breadcrumb">
+        <a href="#" class="crumb">الرئيسية</a>
+        <span class="sep">›</span>
+        <span class="crumb current" id="crumbCat">ياميش رمضان</span>
+      </div>
+      <h1 class="pageTitle" id="pageTitle">ياميش رمضان</h1>
+      <p class="pageSub">صفحة تصنيف بشكل متجر: تصنيفات جانبية + منتجات + سلة (نسخة تجريبية).</p>
+    </div>
+  </section>
+
+  <main class="wrap layout">
+    <aside class="sidebar" id="sidebar" aria-label="تصنيفات المنتجات">
+      <div class="sideCard">
+        <div class="sideTitle">أقسام المنتجات</div>
+        <div class="sideList" id="categoryList"></div>
+      </div>
+
+      <div class="sideCard">
+        <div class="sideTitle">فرز</div>
+        <select id="sortSelect" class="select">
+          <option value="reco">مقترح</option>
+          <option value="price_asc">السعر: من الأقل</option>
+          <option value="price_desc">السعر: من الأعلى</option>
+          <option value="name">الاسم</option>
+        </select>
+      </div>
+
+      <div class="sideCard">
+        <div class="sideTitle">تصفية سريعة</div>
+        <div class="pills">
+          <button class="pill active" data-tag="all">الكل</button>
+          <button class="pill" data-tag="offer">عروض</button>
+          <button class="pill" data-tag="new">جديد</button>
+          <button class="pill" data-tag="popular">الأكثر طلباً</button>
+        </div>
+      </div>
+    </aside>
+
+    <section class="content" aria-label="قائمة المنتجات">
+      <div class="toolbar">
+        <div class="count muted" id="resultCount">—</div>
+        <div class="delivery muted">🚚 التوصيل خلال وقت قصير (تجريبي)</div>
+      </div>
+
+      <div class="grid" id="grid"></div>
+
+      <div class="empty" id="emptyState" hidden>
+        <div class="emptyCard">
+          <div class="emptyTitle">لا يوجد نتائج</div>
+          <div class="muted">جرّب كلمة بحث أخرى أو اختر تصنيف مختلف.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="wrap footerInner">
+      <div>
+        <div class="footerTitle">عن الشركة</div>
+        <a id="about" href="#">قصة SweetLab</a>
+        <a id="policy" href="#">سياسة الاسترجاع</a>
+        <a href="#">اتصل بنا</a>
+      </div>
+      <div>
+        <div class="footerTitle">معلومات</div>
+        <div class="muted">نسخة تجريبية — بعد اعتماد الشكل نضيف صفحات كاملة وخريطة وسوشيال وربط طلبات.</div>
+      </div>
+      <div>
+        <div class="footerTitle">الدفع</div>
+        <div class="payRow">
+          <img src="pay-cod.svg" alt="Cash on delivery" />
+          <img src="pay-visa.svg" alt="VISA" />
+          <img src="pay-master.svg" alt="Mastercard" />
+        </div>
+      </div>
+    </div>
+    <div class="wrap copyright muted">جميع الحقوق محفوظة © <span id="year"></span></div>
+  </footer>
+
+  <!-- Mobile filters drawer -->
+  <aside class="drawer" id="filtersDrawer" aria-hidden="true">
+    <div class="drawerBg" id="filtersBg"></div>
+    <div class="drawerPanel" role="dialog" aria-modal="true" aria-label="التصنيفات والتصفية">
+      <div class="drawerHead">
+        <div class="drawerTitle">التصنيفات والتصفية</div>
+        <button class="xBtn" id="closeFilters" aria-label="إغلاق">✕</button>
+      </div>
+      <div class="drawerBody">
+        <div class="sideCard">
+          <div class="sideTitle">أقسام المنتجات</div>
+          <div class="sideList" id="categoryListMobile"></div>
+        </div>
+        <div class="sideCard">
+          <div class="sideTitle">فرز</div>
+          <select id="sortSelectMobile" class="select">
+            <option value="reco">مقترح</option>
+            <option value="price_asc">السعر: من الأقل</option>
+            <option value="price_desc">السعر: من الأعلى</option>
+            <option value="name">الاسم</option>
+          </select>
+        </div>
+        <div class="sideCard">
+          <div class="sideTitle">تصفية سريعة</div>
+          <div class="pills" id="pillsMobile">
+            <button class="pill active" data-tag="all">الكل</button>
+            <button class="pill" data-tag="offer">عروض</button>
+            <button class="pill" data-tag="new">جديد</button>
+            <button class="pill" data-tag="popular">الأكثر طلباً</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Product modal -->
+  <aside class="modal" id="productModal" aria-hidden="true">
+    <div class="modalBg" id="productBg"></div>
+    <div class="modalPanel" role="dialog" aria-modal="true" aria-label="تفاصيل المنتج">
+      <div class="modalHead">
+        <div>
+          <div class="mTitle" id="mName">—</div>
+          <div class="muted small" id="mCat">—</div>
+        </div>
+        <button class="xBtn" id="closeProduct" aria-label="إغلاق">✕</button>
+      </div>
+
+      <div class="mBody">
+        <div class="mMedia">
+          <img id="mImg" alt="" />
+          <div class="tagRow" id="mTags"></div>
+        </div>
+
+        <div class="mInfo">
+          <div class="mDesc muted" id="mDesc"></div>
+
+          <div class="opt">
+            <div class="optTitle">اختر الحجم/الوزن</div>
+            <div class="optGrid" id="variantGrid"></div>
+          </div>
+
+          <div class="mBottom">
+            <div class="mPrice" id="mPrice">0</div>
+            <div class="qty">
+              <button class="qBtn" id="decQty">−</button>
+              <span class="qNum" id="qtyNum">1</span>
+              <button class="qBtn" id="incQty">+</button>
+            </div>
+          </div>
+
+          <button class="primary" id="addToCartBtn">إضافة للسلة</button>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Cart drawer -->
+  <aside class="drawer" id="cartDrawer" aria-hidden="true">
+    <div class="drawerBg" id="cartBg"></div>
+    <div class="drawerPanel cartPanel" role="dialog" aria-modal="true" aria-label="سلة المشتريات">
+      <div class="drawerHead">
+        <div class="drawerTitle">سلة المشتريات</div>
+        <button class="xBtn" id="closeCart" aria-label="إغلاق">✕</button>
+      </div>
+
+      <div class="drawerBody">
+        <div class="cartItems" id="cartItems"></div>
+
+        <div class="checkout">
+          <div class="line"></div>
+
+          <div class="row">
+            <span class="muted">الإجمالي</span>
+            <span class="total" id="cartTotal">0</span>
+          </div>
+
+          <textarea class="field" id="note" placeholder="ملاحظة للطلب (اختياري)"></textarea>
+
+          <div class="row2">
+            <button class="danger" id="clearCart">تفريغ</button>
+            <button class="primary" id="waOrder">اطلب واتساب</button>
+          </div>
+
+          <div class="muted small">سيتم فتح واتساب برسالة مرتبة تحتوي على الأصناف والكميات.</div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <script src="app.js"></script>
+</body>
+</html>
